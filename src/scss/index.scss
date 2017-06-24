@@ -12,9 +12,9 @@
 .app{
   .app_header{
   	background: url("../img/1_02.jpg") no-repeat center / cover;
-    height: 1000px;
+    height: rem(600);
     .app_header_con{
-      font-weight: bold;
+		@include font_main_head( 30,#744545 );
     }
   }
 }

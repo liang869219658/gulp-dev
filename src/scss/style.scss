@@ -62,37 +62,36 @@ $gb_width: 640;    //640是设计图(画布)的宽度，可根据需要调整
 
 
 //主标题
-@mixin font_main_head(){
-  @include font_fn(36, #fff, bold);
-  line-height: 2.2;
+@mixin font_main_head( $size:36, $color:#f00, $weith:400 ){
+  @include font_fn( $size, $color, $weith );
 }
 
 //次级标题
 @mixin font_sub_head(){
-  @include font_fn(20, #fff, bold);
+  @include font_fn( $size, $color, $weith );
 }
 
 //小标题
 @mixin font_small_head(){
-  @include font_fn(20, #fff, bold);
+  @include font_fn( $size, $color, $weith );
 }
 
 //正文
 @mixin font_text(){
-  @include font_fn(18, #fff);
+  @include font_fn( $size, $color, $weith );
 }
 
 //辅助文字
 @mixin font_help_text(){
-  @include font_fn(12, #999);
+  @include font_fn( $size, $color, $weith );
 }
 
 //失效文字
 @mixin font_disabled_text(){
-  @include font_fn(12, #ccc);
+  @include font_fn( $size, $color, $weith );
 }
 
 //链接文字
 @mixin font_link_text(){
-  @include font_fn(12, #2db7f5);
+  @include font_fn( $size, $color, $weith );
 }
