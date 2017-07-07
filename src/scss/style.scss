@@ -47,7 +47,8 @@ $gb_width: 640;    //640是设计图(画布)的宽度，可根据需要调整
 //字体使用规范
 //字体通用方法
 @mixin font_fn( $size : 12, $color : #fff, $bold : narmal ){
-  @include font_dpr($size);
+ //@include font_dpr($size);
+  font-size: rem($size);
   font-weight: $bold;
   color: $color;
   line-height: 1.5;

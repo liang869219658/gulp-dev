@@ -9,12 +9,19 @@
 // font_fn bg_fn
 
 //start
-.app{
-  .app_header{
-  	background: url("../img/1_02.jpg") no-repeat center / cover;
-    height: rem(600);
-    .app_header_con{
-		@include font_main_head( 30,#744545 );
-    }
-  }
+@keyframes mymove{
+	  0%{transform: scaleX(1);}
+	 50%{transform: scale3d(0.85,0.85,0.85);}
+	 100%{transform: scaleX(1);}
+}
+.app_box{
+  background: #9ddeca;
+  .main{
+	margin: 0 auto;
+	overflow: hidden;
+    width: rem(640);
+	height: rem(2335);
+	background: url(../img/prtbj.png) no-repeat center / cover;
+	@include font_text( 28,#fff );
+	}
 }
